@@ -1,0 +1,67 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56vh;/* A imagem agora cobre a tela inteira */
+    object-fit: cover; /* A imagem será redimensionada para preencher o espaço, mantendo a proporção */
+    z-index: -1;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px; /* Limita a largura máxima para não ficar muito grande em telas grandes */
+    margin: 0;
+}
+
+ion-card {
+    width: 100%;
+    margin: 0;
+    border-radius: 20px 20px 0 0; /* Bordas arredondadas apenas no topo */
+}
+
+ion-card-title {
+    font-size: 5vw; /* Responsivo ao tamanho da tela */
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: var(--ion-color-medium);
+    font-size: 4vw; /* Fonte adaptável ao viewport */
+}
+.login{
+    color: #fff;
+}
+.separator {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--ion-color-medium);
+    font-size: 3vw; /* Adaptável ao tamanho da tela */
+}
+
+.separator span {
+    position: relative;
+    padding: 0 10px;
+    background: white;
+}
+
+ion-button {
+    color: #fff;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px; /* Limita a largura máxima para não expandir muito em telas grandes */
+}

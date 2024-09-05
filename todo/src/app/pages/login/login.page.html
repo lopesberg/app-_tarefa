@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="login-container">
+    <ion-img src="assets\03e68085-c56d-4226-b765-204b0a500b8d.webp" class="background-image"></ion-img>
+    
+    <div class="login-card">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Bem vindo de volta!</ion-card-title>
+          <p>Faca login para continuar</p>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+
+          <ion-button color="success" (click)="login()" class="login">CONECTE-SE</ion-button>
+          <ion-button fill="clear" expand="block" color="medium">ESQUECEU SUA SENHA?</ion-button>
+
+          <div class="separator">
+            <span>OU</span>
+          </div>
+
+          <ion-button expand="block" color="light" (click)="signUp()">INSCREVER-SE</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
